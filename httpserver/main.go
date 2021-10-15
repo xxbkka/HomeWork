@@ -9,6 +9,7 @@ import (
 )
 
 func main() {
+	log.Println("start")
 	flag.Parse()
 	http.HandleFunc("/healthz", healthzHandler)
 	err := http.ListenAndServe(":8089", nil)
